@@ -12,40 +12,44 @@ const config = require('./config');
 
 const routes = require('./routes');
 
-const app = express();
+// const app = express();
+const router = express.Router();
 
-app.use(cors());
-app.use(bodyParser.json());
+// router.use(cors());
+// router.use(bodyParser.json());
 
-app.use(
-  morgan('combined', {
-    stream: fs.createWriteStream(path.join(__dirname, 'access.log'), {
-      flags: 'a',
-    }),
-  })
-);
+// router.use(
+//   morgan('combined', {
+//     stream: fs.createWriteStream(path.join(__dirname, 'access.log'), {
+//       flags: 'a',
+//     }),
+//   })
+// );
 
-if (config.MODE === 'development') {
-  app.use(morgan('dev'));
-}
+// if (config.MODE === 'development') {
+//   router.use(morgan('dev'));
+// }
 
-app.get('/', (req, res) => {
+router.get('/', (req, res) => {
   res.send('API! go to `/api`');
 });
-app.use('/api', routes);
 
-/* eslint-disable */
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).end();
-});
+router.use('/api', routes);
 
-app.listen(config.PORT, err => {
-  if (err) {
-    console.error(err);
-  } else {
-    console.log(
-      `listening at http://localhost:${config.PORT} (${config.MODE} mode)`
-    );
-  }
-});
+// /* eslint-disable */
+// router.use((err, req, res, next) => {
+//   console.error(err.stack);
+//   res.status(500).end();
+// });
+
+// router.listen(config.PORT, (err) => {
+//   if (err) {
+//     console.error(err);
+//   } else {
+//     console.log(
+//       `listening at http://localhost:${config.PORT} (${config.MODE} mode)`
+//     );
+//   }
+// });
+
+module.exports = router;
