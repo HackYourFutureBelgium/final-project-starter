@@ -1,0 +1,20 @@
+.li-answer {
+  background: rgb(233, 232, 230);
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  transition: all 0.5s ease;
+  border: rgb(134, 129, 127) 1px solid;
+}
+
+.li-answer div {
+  flex: 1;
+}
+
+.ul-answers {
+  min-width: 30%;
+  list-style: none;
+  padding-left: 30%;
+  padding-right: 30%;
+}

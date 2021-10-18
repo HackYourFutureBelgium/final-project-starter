@@ -1,0 +1,24 @@
+.body {
+  height: 50vh;
+  position: relative;
+
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+
+  text-align: center;
+  padding: 2rem;
+}
+
+.numberofQuDiv {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+button a:visited,
+button a:link,
+button a:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+}

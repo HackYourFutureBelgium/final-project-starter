@@ -1,0 +1,8 @@
+.quiz-instructions {
+  background-color: #f3e355;
+  border: 0.1rem black solid;
+  border-radius: 2rem;
+  text-align: center;
+  padding: 2rem;
+  font-family: "Poppins", sans-serif;
+}
