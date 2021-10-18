@@ -4,6 +4,8 @@
 
 ## Frontend
 
+npm run build
+
 ## Backend
 
 ## Heroku Deploy

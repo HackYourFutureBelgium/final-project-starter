@@ -1,7 +1,2 @@
-@import url('./body.css');
 @import url('./navbar.css');
-@import url('./bottom.css');
-@import url('./instructions.css');
-@import url('./quiz.css');
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
-@import url('./quiz-question-panel.css');
