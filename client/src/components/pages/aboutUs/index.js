@@ -3,7 +3,7 @@
  *
  * @returns {HTMLDivElement} A rendered register page.
  */
-export const register = () => {
+export const about = () => {
   const container = document.createElement('div');
   container.className = 'body';
 
