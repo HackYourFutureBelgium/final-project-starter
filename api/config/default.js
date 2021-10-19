@@ -4,5 +4,6 @@ module.exports = {
   MODE: 'default',
   PORT: 8080,
   DATA_PATH: path.join(__dirname, '..', 'data'),
-  STATIC_DIR: 'client',
+  STATIC_DIR: 'dist',
+  // STATIC_DIR: 'client',
 };

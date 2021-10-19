@@ -1,3 +1,4 @@
 export default {
-  base: '/client',
+  base: './',
+  // base: '/client',
 };
