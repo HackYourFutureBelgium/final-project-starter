@@ -3,6 +3,7 @@ import { page } from './components/layout/page.js';
 import { home } from './components/pages/home/index.js';
 import { register } from './components/pages/register/index.js';
 import { login } from './components/pages/login/index.js';
+import { about } from './components/pages/aboutUs/index.js';
 
 /**
  * Defines the route URLs, names and callbacks.
@@ -60,5 +61,10 @@ const routeHandler =
     name: 'register',
     path: `/register`,
     callback: routeHandler(register),
+  },
+  {
+    name: 'about',
+    path: `/about`,
+    callback: routeHandler(about),
   },
 ].forEach((route) => routes.push(route));
